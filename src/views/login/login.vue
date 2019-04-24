@@ -58,8 +58,7 @@ export default {
       // 登录验证
       this.$refs.loginForm.validate(valid => {
         if (valid) {
-          this.$store.dispatch('Login', this.loginForm).then(res => {
-            console.log(res)
+          this.$store.dispatch('login', this.loginForm).then(res => {
             if (res === 1) {
               this.$router.push({path: '/home'})
             } else {

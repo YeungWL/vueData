@@ -21,11 +21,11 @@ export default {
       switch (command) {
         case 'logout':
           console.log('已退出')
-          this.loginOut()
+          this.logout()
           break
       }
     },
-    loginOut () {
+    logout () {
       this.$store.dispatch('loginOut').then(() => {
         this.$router.push({path: '/login'})
       })

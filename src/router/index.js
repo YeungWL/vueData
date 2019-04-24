@@ -15,7 +15,6 @@ const whiteList = ['/login']
 
 // 路由守卫
 router.beforeEach((to, from, next) => {
-  console.log(store)
   if (store.getters.token) {
     // 已经登录
     if (to.path === '/login') {
