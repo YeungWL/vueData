@@ -10,6 +10,13 @@ Vue.use(ElementUI)
 
 Vue.config.productionTip = false
 
+// 设置浏览器标题
+Vue.directive('title', {
+  inserted: (el) => {
+    document.title = el.dataset.title
+  }
+})
+
 new Vue({
   router,
   store,

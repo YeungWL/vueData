@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home" v-title data-title="主页">
     <img alt="Vue logo" src="../assets/logo.png">
   </div>
 </template>

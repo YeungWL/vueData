@@ -1,5 +1,5 @@
 <template>
-  <div class="rel-container">
+  <div class="rel-container" v-title data-title="登录">
     <div class="rel-box-body">
       <el-form :model="loginForm"
                :rules="loginRules"
