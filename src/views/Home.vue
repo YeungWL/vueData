@@ -1,6 +1,8 @@
 <template>
   <div class="home" v-title data-title="主页">
     <img alt="Vue logo" src="../assets/logo.png">
+    <p>日历插件</p>
+    <date-picker/>
   </div>
 </template>
 

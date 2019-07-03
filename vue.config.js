@@ -15,10 +15,11 @@ module.exports = {
     config.resolve.alias.set('components', resolve('src/components')),
     config.resolve.alias.set('views', resolve('src/views')),
     config.resolve.alias.set('utils', resolve('src/utils')),
-    config.resolve.alias.set('store', resolve('src/store'))
+    config.resolve.alias.set('store', resolve('src/store')),
+    config.resolve.alias.set('plugin', resolve('src/plugin'))
   },
   devServer: { // webpack-dev-server 相关配置
-    port: 8088, // 端口号
+    port: 8011, // 端口号
     hotOnly: true, // 热更新
     open: true, //配置自动启动浏览器
   }
